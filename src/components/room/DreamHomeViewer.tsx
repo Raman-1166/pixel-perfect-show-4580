@@ -573,7 +573,6 @@ export function DreamHomeViewer() {
       <div className="cta">
         <div>
           <b>Love it? Let's design yours.</b>
-          <small>Free 3D concept for your room in 48 hours.</small>
         </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", alignItems: "center" }}>
           <a
