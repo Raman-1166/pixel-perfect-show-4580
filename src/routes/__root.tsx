@@ -91,6 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "alternate icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "apple-touch-icon", href: "/logo.png" },
+      { rel: "stylesheet", href: "https://chatzy-kb-store.s3.amazonaws.com/icons/5ab07987-b5db-477c-82ff-1287e0883acb" },
     ],
   }),
   shellComponent: RootShell,
@@ -108,6 +109,13 @@ function RootShell({ children }: { children: ReactNode }) {
       <body>
         {children}
         <Scripts />
+        {/* Chatzy widget */}
+        <script
+          src="https://chatzy-kb-store.s3.amazonaws.com/icons/56706cc4-b3ba-4eba-9610-f2fb07008a5c"
+          id="312df103-1043-45b2-8f5f-fa5a6cc09084"
+          className="chatzy_widget_script"
+          defer
+        />
       </body>
     </html>
   );
