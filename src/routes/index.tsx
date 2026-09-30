@@ -9,8 +9,8 @@ import p1 from "@/assets/p1.jpg";
 import p2 from "@/assets/p2.jpg";
 import p3 from "@/assets/p3.jpg";
 import p4 from "@/assets/p4.jpg";
-import p5 from "@/assets/p5.jpg";
-import p6 from "@/assets/p6.jpg";
+const p5 = p1;
+const p6 = p3;
 
 const TITLE = "Dream Home Visuals — Walk through your redesigned home";
 const DESC = "Interactive 3D room makeovers by @dream_homevisuals. Compare before and after, try styles, and explore our interior design portfolio.";
