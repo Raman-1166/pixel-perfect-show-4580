@@ -23,12 +23,12 @@ export const ROOMS: Record<RoomKey, { label: string; x: number; blurb: string }>
   },
   bedroom: {
     label: "Bedroom",
-    x: 16,
+    x: 40,
     blurb: "A calm upholstered bed, soft bedside lighting and a restrained palette that helps you switch off.",
   },
   kitchen: {
     label: "Kitchen",
-    x: 32,
+    x: 80,
     blurb: "A stone-topped island, brass pendants and hidden storage for a kitchen that feels like furniture.",
   },
 };

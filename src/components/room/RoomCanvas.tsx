@@ -215,7 +215,7 @@ function Lights() {
       <color attach="background" args={["#F6F7F4"]} />
       <hemisphereLight ref={amb} args={["#fff8ec", "#a9b8a5", 0.9]} />
       <directionalLight ref={sun} position={[-8, 7, 3]} intensity={2.4} color="#fff1d8" castShadow shadow-mapSize={[1024, 1024]}
-        shadow-camera-left={-20} shadow-camera-right={40} shadow-camera-top={10} shadow-camera-bottom={-10} shadow-bias={-0.0005} />
+        shadow-camera-left={-20} shadow-camera-right={90} shadow-camera-top={10} shadow-camera-bottom={-10} shadow-bias={-0.0005} />
       <group ref={lamps}>
         <pointLight position={[-2.3, 1.9, -3.6]} color="#FFB866" distance={9} decay={1.5} intensity={0} />
         <pointLight position={[ROOMS.bedroom.x + 0.5, 1.2, -3.6]} color="#FFB866" distance={8} decay={1.5} intensity={0} />
@@ -285,13 +285,13 @@ export default function RoomCanvas({ style = "modern", night = false, grey = fal
   const ctx: Ctx = { colors, night, interactive: mode === "studio", hovered, setHovered, onSelect };
   return (
     <Canvas shadows={!lowPower} dpr={lowPower ? 1 : [1, 1.75]} camera={{ position: CAM.pos.toArray(), fov: 45 }} onPointerMissed={onMissed}
-      gl={{ antialias: true }} aria-label="Interactive 3D room">
+      gl={{ antialias: true }} style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} aria-label="Interactive 3D room">
       <SceneCtx.Provider value={ctx}>
         <Lights />
         <Living />
         <Bedroom />
         <Kitchen />
-        {!lowPower && <ContactShadows position={[16, 0.005, -2]} scale={50} opacity={0.3} blur={2.5} far={3} frames={1} />}
+        {!lowPower && <ContactShadows position={[40, 0.005, -2]} scale={180} opacity={0.3} blur={2.5} far={3} frames={1} />}
         <Rig room={room} mode={mode} reduced={reduced} />
       </SceneCtx.Provider>
     </Canvas>
