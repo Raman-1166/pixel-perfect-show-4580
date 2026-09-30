@@ -308,12 +308,7 @@ function Hero() {
             >
               Explore 3D Makeover <ArrowDown size={16} />
             </a>
-            <a
-              href="#work"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-background/80 backdrop-blur px-6 py-3.5 text-sm font-medium text-foreground transition hover:border-[#C9A14A]"
-            >
-              View Portfolio
-            </a>
+
           </div>
         </motion.div>
       </div>
