@@ -202,7 +202,7 @@ function Lights() {
   useFrame((_, d) => {
     const k = 1 - Math.exp(-3 * d);
     if (sun.current) sun.current.intensity += ((night ? 0.08 : 2.4) - sun.current.intensity) * k;
-    if (amb.current) amb.current.intensity += ((night ? 0.25 : 0.9) - amb.current.intensity) * k;
+    if (amb.current) amb.current.intensity += ((night ? 0.5 : 0.9) - amb.current.intensity) * k;
     lamps.current?.children.forEach((l) => {
       const pl = l as THREE.PointLight;
       pl.intensity += ((night ? 6 : 0) - pl.intensity) * k;

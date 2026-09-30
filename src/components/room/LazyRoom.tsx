@@ -34,7 +34,7 @@ export function LazyRoom(props: RoomCanvasProps & { className?: string }) {
     return () => io.disconnect();
   }, []);
   return (
-    <div ref={ref} className={`relative ${className ?? ""}`}>
+    <div ref={ref} className={className ?? "relative"}>
       {show ? (
         <Suspense fallback={<Loading />}>
           <RoomCanvas {...rest} />
