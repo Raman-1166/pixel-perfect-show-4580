@@ -1,29 +1,8 @@
-# Welcome to your Lovable project
+# Dream Home Visuals — interactive 3D site
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+- Run: `npm i && npm run dev`
+- Build: `npm run build`. Easiest deploy: click **Publish** in Lovable.
+- Edit text, palettes, room blurbs and furniture tips: `src/components/room/data.ts`
+- Replace portfolio photos: `src/assets/` + the `PROJECTS` list in `src/routes/index.tsx`
+- Swap in real .glb models: see the comment at the top of `src/components/room/RoomCanvas.tsx`
+- Contact links (WhatsApp/email/phone are placeholders): `Contact` in `src/routes/index.tsx`

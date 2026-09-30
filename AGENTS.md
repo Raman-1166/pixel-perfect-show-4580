@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- 3D rooms are procedural primitives in one shared world (rooms offset on x) loaded lazily via LazyRoom — keeps the scene tiny and needs no model downloads.
